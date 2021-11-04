@@ -5,6 +5,7 @@
 
 # dependencies
 /node_modules
+nodemon.json
 
 # IDEs and editors
 /.idea
