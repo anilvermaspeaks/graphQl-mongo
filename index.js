@@ -32,7 +32,7 @@ app.use('/graphql', graphqlHTTP({
 
 mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.r9xle.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`).then(() => {
     app.listen(PORT, () => {
-        console.log(`app running on PORT ${PORT}`)
+        console.log(`app running on PORT ${process.env.PORT || PORT}`)
     })
 })
     .catch((e) => {
